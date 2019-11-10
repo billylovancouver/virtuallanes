@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+   
+      <!-- <ion-fab-button href="/driver">Driver</ion-fab-button> 
+      <ion-fab-button href="/passenger">Passenger</ion-fab-button>  -->
+
+      <ion-content> <form #form="ngForm" method="post"> 
+          <ion-item> 
+              <ion-label position="floating">First Name</ion-label>
+              <ion-input ngModel type="username" name="username"></ion-input> 
+            </ion-item>
+            <ion-item> 
+                <ion-label position="floating">Last Name</ion-label>
+                <ion-input ngModel type="username" name="username"></ion-input> 
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating">Introduce yourself!</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+        <ion-item> 
+          <ion-label position="floating">Username</ion-label>
+          <ion-input ngModel type="username" name="username"></ion-input> 
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input ngModel type="password" name="password"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>
+              Which type of user are you?
+          </ion-label>
+        </ion-item>
+
+        
+        <ion-button type="submit" color="success" (click)="driver()" expand="full" >Driver</ion-button>
+        </form>
+
+        
+        <ion-button expand="full" color="success" (click)="passenger()">Passenger</ion-button> </ion-content>

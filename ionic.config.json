@@ -1,0 +1,7 @@
+{
+  "name": "VirtualLanes",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

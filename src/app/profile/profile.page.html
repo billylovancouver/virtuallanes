@@ -1,0 +1,102 @@
+<ion-header>
+<ion-toolbar>
+<ion-buttons slot="start">
+<ion-menu-button></ion-menu-button>
+</ion-buttons>
+<ion-title>
+PROFILE
+</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <ion-item>
+      <ion-label color="secondary">
+      You are a:
+      </ion-label>
+      </ion-item>
+
+<ion-list>
+<ion-item>
+<ion-label>Driver</ion-label>
+<ion-toggle (click)='toggleDriver()' slot="start" name="Driver" checked></ion-toggle>
+</ion-item>
+<ion-item>
+<ion-label>Passenger</ion-label>
+<ion-toggle slot="start" name="Passenger" unchecked></ion-toggle>
+</ion-item>
+</ion-list>
+
+
+<ion-item>
+  <!-- <Div enabled='!driverInfo'> -->
+
+  
+<ion-label color="secondary">
+Driver Information
+</ion-label>
+</ion-item>
+
+<ion-item>
+<ion-label>Departure Time</ion-label>
+<!-- <ion-label>Day - Month - Year - Hour - Minute </ion-label> -->
+<ion-datetime displayFormat="D MMM YYYY H:mm" min="2019-11-10" max="2040" value="2019-11-01T08:00"></ion-datetime>
+</ion-item>
+
+  <ion-item>
+      <ion-label>Expected Arrival Time</ion-label>
+      <!-- <ion-label>Day - Month - Year - Hour - Minute </ion-label> -->
+      <ion-datetime displayFormat="D MMM YYYY H:mm" min="2019-11-10" max="2040" value="2019-11-15T08:45"></ion-datetime>
+    </ion-item>
+
+<ion-item>
+<ion-label>
+Pin a pick-up location
+</ion-label>
+<ion-checkbox checked = "true"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label>
+Pin a destination
+</ion-label>  
+<ion-checkbox checked = "true"></ion-checkbox>
+</ion-item> 
+<!-- </Div> -->
+
+
+<ion-item>
+<ion-label color="secondary">
+Passenger Information
+</ion-label>
+</ion-item>
+
+<ion-item>
+    <ion-label>Expected Departure Time</ion-label>
+    <!-- <ion-label>Day - Month - Year - Hour - Minute </ion-label> -->
+    <ion-datetime displayFormat="D MMM YYYY H:mm" min="2019-11-10" max="2040" value=""></ion-datetime>
+    </ion-item>
+    
+    
+      <ion-item>
+          <ion-label>Desired Arrival Time</ion-label>
+          <!-- <ion-label>Day - Month - Year - Hour - Minute </ion-label> -->
+          <ion-datetime displayFormat="D MMM YYYY H:mm" min="2019-11-10" max="2040" value=""></ion-datetime>
+        </ion-item>
+    
+    <ion-item>
+    <ion-label>
+    Select a pick-up point
+    </ion-label>
+    <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item>
+    <ion-label>
+    Select your destination
+    </ion-label>  
+    <ion-checkbox></ion-checkbox>
+    </ion-item> 
+
+
+</ion-content>

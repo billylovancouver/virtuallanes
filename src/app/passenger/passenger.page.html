@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Passenger</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+      <ion-item>
+          <ion-label>Desired Departure Time</ion-label>
+          <!-- <ion-label>Day - Month - Year - Hour - Minute </ion-label> -->
+          <ion-datetime displayFormat="D MMM YYYY H:mm" min="2019-11-10" max="2040" value=""></ion-datetime>
+        </ion-item>
+
+
+              <ion-item>
+                  <ion-label>Desired Arrival Time</ion-label>
+                  <!-- <ion-label>Day - Month - Year - Hour - Minute </ion-label> -->
+                  <ion-datetime displayFormat="D MMM YYYY H:mm" min="2019-11-10" max="2040" value=""></ion-datetime>
+                </ion-item>
+
+  <ion-item>
+      <ion-label> Select a pick-up location</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item>
+  <ion-label> Select your destination</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item> 
+
+      
+      <ion-button expand="full" color="secondary" (click)="profile()">Register</ion-button> 
+
+
+
+</ion-content>
